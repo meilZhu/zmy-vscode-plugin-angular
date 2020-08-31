@@ -8,21 +8,7 @@ This extension allows **quickly scaffold angular 2 file templates** in VS Code p
 
 ## Changelog
 
-### 1.6.4
-* Fixed issues with module imports
-* Fixed issues with comments while imporing in module
-* Fixed issues with style extensions
-
-### 1.6.2
-* Fixed issue with module import
-
-### 1.6.1
-* Fix module declaration and exports automatic import
-* Fix small issue with empty default values
-* Change module finding logic to ignore module name
-* Default options improvements
-
-### 1.6.0
+### 0.0.3
 You can now leverage angular-cli resource generation options without remembering their names, while keeping things simple and fast!
 
 * `"my-component -o"` - Use "-o" flag to specify which options to override
@@ -37,25 +23,7 @@ You can now leverage angular-cli resource generation options without remembering
 
 Angular Files will automatically scan you angular.json to determine which default options you have already set and will let you to override them while displaying the current values
 
-### 1.5.2
-* Support generating module with routing praram eg. "my-module --routing" similar to "ng g module my-module --routing"
-
-### 1.5.1
-* Support global level angular.json config
-
-### 1.5.0
-* Support angular 6 new service template
-
-### 1.4.9
-* Fix angular.json (angular 6) schema parsing issues
-
-### 1.4.7
-* Fix issue reading angular.json component prefix
-
-### 1.4.6
-* Added support for angular.json (both schemas of .angular-cli.json and angular.json are supported)
-
-### 1.4.5
+### 0.0.2
 * Added configuration to hide some menu names, thanks to roknow for contribution!
 ```json
   "dt.menu.class": false,
@@ -68,108 +36,11 @@ Angular Files will automatically scan you angular.json to determine which defaul
   "dt.menu.route": false,
   "dt.menu.service": true
 ```
-### 1.4.4
-* Fix issue finding .angular-cli.json file in multi root projects
 
-### 1.4.3
-* Fix naming issue that prevent extension to work on linux distributions
-
-### 1.4.2
-* Reduced extension size
-
-### 1.4.1
-* Fix issue generating non flat service
-
-### 1.4.0
-* Fix trailing commas issue
-
-### 1.3.10
-* Fix .angular-cli.json was automatically included in every non cli project
-* Fix add module declarations to *.module.ts  instead of *.module.js
-
-### 1.3.9
-* Multiple enhancements and performance improvements
-* Added support for .angular-cli.json flexible file generation
-
-```json
-    "defaults": {
-        "styleExt": "css",
-        "component": {
-            "spec": true,
-            "inlineStyle": false,
-            "inlineTemplate": false,
-            "flat": false,
-            "changeDetection": "Default",
-            "viewEncapsulation": "Emulated"
-        },
-        "class": {
-            "spec": false
-        }, 
-        "directive": {
-            "flat": true,
-            "spec": true
-        },
-        "guard": {
-            "flat": true,
-            "spec": true
-        },
-        "interface": {
-            "prefix": ""
-        },
-        "module": {
-            "flat": false,
-            "spec": false
-        },
-        "pipe": {
-            "flat": true,
-            "spec": true
-        },
-        "service": {
-            "flat": true,
-            "spec": true
-        }
-    }
-```
-
-### 1.3.8
-* Fixed support for custom app structure
-
-### 1.3.7
-* It's just angular
-* Module style ext fix - thanks to Sam Lin
-
-### 1.3.6
-* Fix incorrect extension in component generation
-
-### 1.3.5
-* CPU usage improvements 
-
-### 1.3.4
-
-* Support for non angular-cli file-structure, code should reside in 'app' folder by default 
-* Fixed import declarations to incorrect module
-* Added route class generat template
- 
-### 1.3.2
-
-* Angular-Files now supports angular-cli.json and you can use custom prefixes, different style extensions.
-* Note: if you not using angular-cli it is possible to add angular-cli.json to customize file generatiion.
-
-### 1.3.1
-
-* Fixed serivces was incorrectly imported to module declarations
-
-### 1.3.0
-
-* Fixed import declarations to closest module
-
-### 1.1.0
+### 0.0.1
 
 * **angular-cli** removed due to slowness
-* **app.module** added automatic import of dependencies
-
-### 1.0.0
-* Integrated angular-cli for file generation 
+* **app.module** added automatic import of dependencies 
 
 
 ## Features
